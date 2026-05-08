@@ -3,7 +3,11 @@ import pandas as pd
 import streamlit as st
 
 @st.cache_data
-model = joblib.load('hr_attrition_model.pkl')
+def load_model():
+    return model = joblib.load('hr_attrition_model.pkl')
+
+model = load_model()
+
 
 st.set_page_config(
     page_title="HR Predictive Management System",
