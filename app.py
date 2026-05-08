@@ -2,6 +2,7 @@ import joblib
 import pandas as pd
 import streamlit as st
 
+@st.cache_data
 model = joblib.load('hr_attrition_model.pkl')
 
 st.set_page_config(
