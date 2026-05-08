@@ -1,0 +1,51 @@
+{
+    "model_name": "HR Predictive Management System",
+    "algorithm": "XGBClassifier",
+    "target": "left",
+    "removed_leakage_columns": [
+        "attrition_status"
+    ],
+    "features": [
+        "satisfaction_level",
+        "last_evaluation",
+        "number_project",
+        "average_montly_hours",
+        "time_spend_company",
+        "Work_accident",
+        "promotion_last_5years",
+        "Department",
+        "salary",
+        "overworked",
+        "satisfaction"
+    ],
+    "numeric_features": [
+        "satisfaction_level",
+        "last_evaluation",
+        "number_project",
+        "average_montly_hours",
+        "time_spend_company",
+        "Work_accident",
+        "promotion_last_5years"
+    ],
+    "categorical_features": [
+        "Department",
+        "salary",
+        "overworked",
+        "satisfaction"
+    ],
+    "best_parameters": {
+        "model__subsample": 0.8,
+        "model__n_estimators": 200,
+        "model__max_depth": 8,
+        "model__learning_rate": 0.2,
+        "model__gamma": 0,
+        "model__colsample_bytree": 1.0
+    },
+    "training_accuracy": 1.0,
+    "training_f1": 1.0,
+    "training_roc_auc": 1.0,
+    "testing_accuracy": 0.9883333333333333,
+    "testing_f1": 0.9752650176678446,
+    "testing_roc_auc": 0.9928152363307527,
+    "diagnosis": "Good Fit / Balanced"
+}
