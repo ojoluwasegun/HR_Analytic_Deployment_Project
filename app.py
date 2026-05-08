@@ -4,7 +4,7 @@ import streamlit as st
 
 @st.cache_data
 def load_model():
-    return model = joblib.load('hr_attrition_model.pkl')
+    return joblib.load('hr_attrition_model.pkl')
 
 model = load_model()
 
